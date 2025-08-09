@@ -1,0 +1,6 @@
+name: validate-workflow-call
+on: workflow_call
+jobs:
+  build:
+    uses: ./.github/workflows/validate.yml
+    secrets: inherit
